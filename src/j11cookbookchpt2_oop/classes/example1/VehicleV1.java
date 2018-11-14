@@ -14,6 +14,13 @@ public class VehicleV1 {
     private EngineV1 engine;
 
     public VehicleV1(int weightPounds, EngineV1 engine) {
+        //Adding exception to prevent user from passing a null value into the 
+        //engine parameter
+        if(engine == null) {
+            throw new RuntimeException("Engine is a required parameter when"
+                    + " creating a Vehicle");
+        }
+        
         this.weightPounds = weightPounds;
         this.engine = engine;
     }
