@@ -5,9 +5,9 @@
  */
 package j11cookbookchpt2_oop.classes;
 
-import j11cookbookchpt2_oop.classes.example1.CarV1;
-import j11cookbookchpt2_oop.classes.example1.EngineV1;
-import j11cookbookchpt2_oop.classes.example1.VehicleV1;
+import j11cookbookchpt2_oop.classes.example01.CarV1;
+import j11cookbookchpt2_oop.classes.example01.EngineV1;
+import j11cookbookchpt2_oop.classes.example01.VehicleV1;
 
 /**
  *
