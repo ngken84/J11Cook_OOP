@@ -5,6 +5,8 @@
  */
 package j11cookbookchpt2_oop;
 
+import j11cookbookchpt2_oop.classes.ClassExamples;
+
 /**
  *
  * @author ngke
@@ -16,6 +18,8 @@ public class J11CookbookChpt2_OOP {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ClassExamples classExamples = new ClassExamples();
+        classExamples.executeExample1();
     }
     
 }
