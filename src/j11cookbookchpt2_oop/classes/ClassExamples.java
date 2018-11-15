@@ -10,6 +10,7 @@ import j11cookbookchpt2_oop.classes.example01.EngineV1;
 import j11cookbookchpt2_oop.classes.example01.VehicleV1;
 import j11cookbookchpt2_oop.classes.example02.VehicleV2;
 import j11cookbookchpt2_oop.classes.example03.VehicleV3;
+import j11cookbookchpt2_oop.classes.example04.VehicleV4;
 
 /**
  *
@@ -82,6 +83,13 @@ public class ClassExamples {
         double timeSec = 10.0;
         System.out.println("Car speed (" + timeSec + " sec) = " + vehicle.getSpeedMph(timeSec) + " mph");
         
+    }
+    
+    public void executeExample05() {
+        System.out.println("\nEXAMPLE 05 - inner class static");
+        VehicleV4 vehicle = new VehicleV4(1000, 100);
+        double timeSec = 10.0;
+        System.out.println("Car speed (" + timeSec + " sec) = " + vehicle.getSpeedMph(timeSec) + " mph");
     }
     
     

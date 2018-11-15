@@ -35,4 +35,5 @@ This example is not a great one for demonstrating why inner classes are useful b
 - You can instantiate any class and overwrite one or more of its methods, cool.
 
 
-
+## Example 5 : Static Inner Classes
+- Can't reference static members of the outer class.
