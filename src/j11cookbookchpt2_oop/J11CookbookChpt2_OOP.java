@@ -19,7 +19,10 @@ public class J11CookbookChpt2_OOP {
     public static void main(String[] args) {
         // TODO code application logic here
         ClassExamples classExamples = new ClassExamples();
-        classExamples.executeExample1();
+        classExamples.executeExample01();
+        classExamples.executeExample02();
+        classExamples.executeExample03();
+        classExamples.executeExample04();
     }
     
 }
