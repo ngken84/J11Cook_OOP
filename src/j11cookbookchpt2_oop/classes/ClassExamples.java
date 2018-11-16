@@ -11,6 +11,9 @@ import j11cookbookchpt2_oop.classes.example01.VehicleV1;
 import j11cookbookchpt2_oop.classes.example02.VehicleV2;
 import j11cookbookchpt2_oop.classes.example03.VehicleV3;
 import j11cookbookchpt2_oop.classes.example04.VehicleV4;
+import j11cookbookchpt2_oop.classes.example05.CarV5;
+import j11cookbookchpt2_oop.classes.example05.TruckV5;
+import j11cookbookchpt2_oop.classes.example05.VehicleV5;
 
 /**
  *
@@ -90,6 +93,22 @@ public class ClassExamples {
         VehicleV4 vehicle = new VehicleV4(1000, 100);
         double timeSec = 10.0;
         System.out.println("Car speed (" + timeSec + " sec) = " + vehicle.getSpeedMph(timeSec) + " mph");
+    }
+    
+    public void executeExample06() {
+        System.out.println("\nEXAMPLE 06 - Inheritance");
+        double timeSec = 10.0;
+        int engineHorsePower = 246;
+        int vehicleWeightPounds = 4000;
+        VehicleV5 vehicle = new CarV5(4, vehicleWeightPounds, engineHorsePower);
+        System.out.println("Passenger Count = " + ((CarV5) vehicle).getPassengerCount());
+        System.out.println("Car speed (" + timeSec + " sec) = " 
+                + vehicle.getSpeedMph(timeSec) + " mph");
+        
+        VehicleV5 truck = new TruckV5(100, vehicleWeightPounds, engineHorsePower);
+        System.out.println("Payload = " + ((TruckV5) truck).getPayload());
+        System.out.println("Truck speed (" + timeSec + " sec) = " 
+                + truck.getSpeedMph(timeSec) + " mph");
     }
     
     

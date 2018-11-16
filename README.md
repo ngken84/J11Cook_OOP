@@ -37,3 +37,5 @@ This example is not a great one for demonstrating why inner classes are useful b
 
 ## Example 5 : Static Inner Classes
 - Can't reference static members of the outer class.
+
+## Example 6 : Inheritance
