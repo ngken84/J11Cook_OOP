@@ -5,6 +5,8 @@
 - RuntimeExceptions do not need to be inside a try-catch block so are useful for making more descriptive errors
 - NullPointerExceptions are something you have to pay attention to when making object-oriented designs
 - Whenever you instantiate a class, you can override any method in the class
+- **Aggregation** is a more extensible way to design code on large teams to allow for methods to be more easily split between teams
+- The Properties Util class is a useful tool for passing information in a HashMap<Object, Object> fashion
 
 
 # Classes
@@ -39,3 +41,7 @@ This example is not a great one for demonstrating why inner classes are useful b
 - Can't reference static members of the outer class.
 
 ## Example 6 : Inheritance
+- Nothing special really. Lots of different ways to do it. 
+
+## Example 7 : Aggregation
+- This is an important design concept to allow teams to design objects 

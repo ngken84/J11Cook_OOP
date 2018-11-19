@@ -25,6 +25,7 @@ public class J11CookbookChpt2_OOP {
         classExamples.executeExample04();
         classExamples.executeExample05();
         classExamples.executeExample06();
+        classExamples.executeExample07();
     }
     
 }

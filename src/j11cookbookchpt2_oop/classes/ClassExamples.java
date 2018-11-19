@@ -14,6 +14,9 @@ import j11cookbookchpt2_oop.classes.example04.VehicleV4;
 import j11cookbookchpt2_oop.classes.example05.CarV5;
 import j11cookbookchpt2_oop.classes.example05.TruckV5;
 import j11cookbookchpt2_oop.classes.example05.VehicleV5;
+import j11cookbookchpt2_oop.classes.example06.SpeedModel;
+import j11cookbookchpt2_oop.classes.example06.VehicleV6;
+import java.util.Properties;
 
 /**
  *
@@ -111,6 +114,22 @@ public class ClassExamples {
                 + truck.getSpeedMph(timeSec) + " mph");
     }
     
+    public void executeExample07() {
+        System.out.println("\nEXAMPLE 07 - Aggregation");
+        double timeSec = 10.0;
+        int horsePower = 246;
+        int vehicleWeight = 4000;
+        
+        Properties drivingConditions = new Properties();
+        drivingConditions.put("roadCondition", "Wet");
+        drivingConditions.put("tireCondition", "New");
+        
+        SpeedModel speedModel = new SpeedModel(drivingConditions);
+        VehicleV6 car = new VehicleV6(vehicleWeight, horsePower);
+        car.setSpeedModel(speedModel);
+        
+        System.out.println("Car speed(" + timeSec + " sec) = " + car.getSpeedMph(timeSec) + " mph");
+    }
     
     
 }
