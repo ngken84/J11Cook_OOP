@@ -9,6 +9,11 @@
 - The Properties Util class is a useful tool for passing information in a HashMap<Object, Object> fashion
 - Use **Factory** classes to hide implementation of constructors.
 	- A Vehicle factory can create all the vehicle types like cars, trucks, etc.
+- Optionals are useful for handling potentially null values but are not serializable.
+	- They are intended to be:
+		- return values for functions that may return null
+		- parameters for functions that my be passed null
+	- Lists of optionals are also not encouraged. 
 
 
 # Classes
@@ -54,4 +59,16 @@ This example is not a great one for demonstrating why inner classes are useful b
 	- One that gives access to different builders
 
 ## Example 9 : Default and Static Methods in Interfaces
--
+- Default methods in interfaces allows us to add methods to interfaces without requiring the classes that already implement the interface to adopt the new method. It does provide functionality to the class if the implementing class does not provide it. 
+- Static methods in interfaces are much like static ones in classes and cannot be overwritten
+
+# Optionals
+
+Optionals are a more effective method of representing values that can be null. It is a tool to avoid null pointer errors. 
+
+## Example 1 : Using Optionals
+- Simple to use. 
+- orElseGet() or orElse() are useful functions to get values if a the optional value is null
+- ifPresent() will process a value if the value is not null otherwise it will do nothing
+
+

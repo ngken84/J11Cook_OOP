@@ -6,6 +6,7 @@
 package j11cookbookchpt2_oop;
 
 import j11cookbookchpt2_oop.classes.ClassExamples;
+import j11cookbookchpt2_oop.optionals.OptionalsExamples;
 
 /**
  *
@@ -27,6 +28,11 @@ public class J11CookbookChpt2_OOP {
         classExamples.executeExample06();
         classExamples.executeExample07();
         classExamples.executeExample09();
+        
+        OptionalsExamples optionalExamples = new OptionalsExamples();
+        optionalExamples.runExample01();
+        
+        
     }
     
 }
