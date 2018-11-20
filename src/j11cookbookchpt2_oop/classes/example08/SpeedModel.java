@@ -11,4 +11,6 @@ package j11cookbookchpt2_oop.classes.example08;
  */
 public interface SpeedModel {
     
+    double getSpeedMph(double timeSec, int weightPounds, int horsePower);
+    
 }

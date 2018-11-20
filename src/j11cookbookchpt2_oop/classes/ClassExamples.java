@@ -16,6 +16,8 @@ import j11cookbookchpt2_oop.classes.example05.TruckV5;
 import j11cookbookchpt2_oop.classes.example05.VehicleV5;
 import j11cookbookchpt2_oop.classes.example06.SpeedModel;
 import j11cookbookchpt2_oop.classes.example06.VehicleV6;
+import j11cookbookchpt2_oop.classes.example09.TruckV09;
+import j11cookbookchpt2_oop.classes.example09.VehicleV09;
 import java.util.Properties;
 
 /**
@@ -133,10 +135,18 @@ public class ClassExamples {
     
     public void executeExample08() {
         System.out.println("\nEXAMPLE 08 - Intefaces");
-       
         
         
     }
     
+    public void executeExample09() {
+        System.out.println("\nEXAMPLE 09 - Default and Static methods");
+        int horsePower = 246;
+        int vehicleWeight = 4000;
+        int payloadPounds = 300;
+        
+        TruckV09 truck = new TruckV09(payloadPounds, vehicleWeight, horsePower);
+        System.out.println("Payload in Kg - " + truck.getPayloadKg(payloadPounds));
+    }
     
 }
