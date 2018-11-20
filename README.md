@@ -7,6 +7,8 @@
 - Whenever you instantiate a class, you can override any method in the class
 - **Aggregation** is a more extensible way to design code on large teams to allow for methods to be more easily split between teams
 - The Properties Util class is a useful tool for passing information in a HashMap<Object, Object> fashion
+- Use **Factory** classes to hide implementation of constructors.
+	- A Vehicle factory can create all the vehicle types like cars, trucks, etc.
 
 
 # Classes
@@ -45,3 +47,11 @@ This example is not a great one for demonstrating why inner classes are useful b
 
 ## Example 7 : Aggregation
 - This is an important design concept to allow teams to design objects 
+
+## Example 8 : Interfaces
+- Use factories to generate instances of classes. We have two different examples of Factories.
+	- One for SpeedModels that returns different classes depending on the current conditions
+	- One that gives access to different builders
+
+## Example 9 : Default and Static Methods in Interfaces
+-

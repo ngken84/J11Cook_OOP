@@ -131,5 +131,12 @@ public class ClassExamples {
         System.out.println("Car speed(" + timeSec + " sec) = " + car.getSpeedMph(timeSec) + " mph");
     }
     
+    public void executeExample08() {
+        System.out.println("\nEXAMPLE 08 - Intefaces");
+       
+        
+        
+    }
+    
     
 }
